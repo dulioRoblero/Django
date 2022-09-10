@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+{% extends 'base.html'%}
+{% block contenido %}
     <h1>Home</h1>
-    <a href={% url 'home:listadoapp' %} title="Mi enlace" class="nav-link">listado</a>
-</body>
-</html>
+    <a href={% url 'home:homeapp' %} title="Mi enlace" class="nav-link">home</a>
+    <a href={% url 'home:administradoresapp' %} title="Mi enlace" class="nav-link">Administradores</a>
+    <a href={% url 'home:estudiantesapp' %} title="Mi enlace" class="nav-link">Estudiantes</a>
+{% endblock %}
