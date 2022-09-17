@@ -11,3 +11,4 @@ class AdministradoresView(TemplateView):
 
 class EstudiantesView(TemplateView):
     template_name='estudiantes.html'
+

@@ -27,5 +27,6 @@ urlpatterns = [
     path('',HomeView.as_view(), name='homeapp'),
     path('administradores/',AdministradoresView.as_view(), name='administradoresapp'),
     path('estudiantes/',EstudiantesView.as_view(), name='estudiantesapp')
+   
 ]
 
